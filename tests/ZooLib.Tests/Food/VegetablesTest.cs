@@ -1,11 +1,11 @@
-﻿namespace ZooLibrary.Tests.Food
+﻿namespace ZooLib.Tests.Food
 {
     public class VegetablesTest
     {
         [Fact]
         public void ShouldBeAbleToCreateVegetables()
         {
-            var vegetables = new ZooLibrary.Food.Vegetables();
+            var vegetables = new ZooLib.Food.Vegetables();
 
             Assert.NotNull(vegetables);
         }

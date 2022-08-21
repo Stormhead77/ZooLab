@@ -1,4 +1,4 @@
-﻿namespace ZooLibrary.Food
+﻿namespace ZooLib.Food
 {
     public class Meat : Food
     {

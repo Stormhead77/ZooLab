@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{D1C9D386
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooApp", "src\ZooApp\ZooApp.csproj", "{A4B837B8-366C-4C51-B364-2F6E086C9635}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooLib.Tests", "tests\ZooLab.Tests\ZooLib.Tests.csproj", "{158A842A-80A5-4E1A-84CD-1F9A72E15FC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooLib.Tests", "tests\ZooLib.Tests\ZooLib.Tests.csproj", "{158A842A-80A5-4E1A-84CD-1F9A72E15FC8}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZooApp.Tests", "tests\ZooApp.Tests\ZooApp.Tests.csproj", "{867131A3-DC7C-4811-99D2-169A618BC4F7}"
 EndProject

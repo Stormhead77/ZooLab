@@ -1,11 +1,11 @@
-﻿namespace ZooLibrary.Tests.Medicine
+﻿namespace ZooLib.Tests.Medicine
 {
     public class AntibioticsTest
     {
         [Fact]
         public void ShouldBeAbleToCreateAntibiotics()
         {
-            var antibiotics = new ZooLibrary.Medicine.Antibiotics();
+            var antibiotics = new ZooLib.Medicine.Antibiotics();
 
             Assert.NotNull(antibiotics);
         }

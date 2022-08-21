@@ -1,4 +1,4 @@
-﻿namespace ZooLibrary.Medicine
+﻿namespace ZooLib.Medicine
 {
     public class AntiDepression : Medicine
     {

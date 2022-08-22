@@ -3,7 +3,7 @@ using ZooLib.Utility;
 
 namespace ZooLib.Employees
 {
-    public class ZooKeeper : IEmployee
+    public class Veterinarian : IEmployee
     {
         public string FirstName { get; set; } = string.Empty;
         public string LastName { get; set; } = string.Empty;
@@ -22,20 +22,14 @@ namespace ZooLib.Employees
             return AnimalExperiences.Contains(animal.GetType().Name);
         }
 
-        public bool FeedAnimal(Animal animal)
+        public bool HealAnimal(Animal animal)
         {
-            if (!HasAnimalExperience(animal)
-                || animal.FeedTimes.Count >= 2
-                && animal.FeedTimes[^1].DateTime.Date == DateTime.Today
-                && animal.FeedTimes[^2].DateTime.Date == DateTime.Today)
+            if (!HasAnimalExperience(animal) || !animal.IsSick)
             {
                 return false;
             }
 
-            var food = (Food.Food)Activator.CreateInstance(Type.GetType("ZooLib.Food." + animal.FavoriteFood[0]));
-            animal.Feed(food);
-            var feedTime = new FeedTime(DateTime.Now, this);
-            animal.FeedTimes.Add(feedTime);
+            animal.IsSick = false;
 
             return true;
         }
